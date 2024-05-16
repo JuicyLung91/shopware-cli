@@ -6,7 +6,7 @@ import (
 
 var makerMakeAdminModuleCmd = &cobra.Command{
 	Use:   "admin-module [name]",
-	Short: "Make an admin module boilerplate",
+	Short: "Make an admin module",
 	Args:  cobra.ExactArgs(1),
 	RunE: func(cmd *cobra.Command, args []string) error {
 		/** @todo implement command */
