@@ -9,8 +9,6 @@ var makerMakeAdminModuleCmd = &cobra.Command{
 	Short: "Make an admin module",
 	Args:  cobra.ExactArgs(1),
 	RunE: func(cmd *cobra.Command, args []string) error {
-		/** @todo implement command */
-
 		return nil
 	},
 }
