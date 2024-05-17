@@ -3,8 +3,6 @@ package maker
 import (
 	"os"
 	"testing"
-
-	"github.com/gobeam/stringy"
 )
 
 func TestRenderTemplates(t *testing.T) {
@@ -88,7 +86,7 @@ func TestCamelCaseHelper(t *testing.T) {
 	}
 
 	for _, test := range tests {
-		actual := stringy.New(test.input).CamelCase().Get()
+		actual := CamelCase(test.input)
 		if actual != test.expected {
 			t.Errorf("Expected %s, got %s, input: %s", test.expected, actual, test.input)
 		}
